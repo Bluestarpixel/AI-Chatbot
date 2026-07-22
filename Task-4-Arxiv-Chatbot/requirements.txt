@@ -1,0 +1,190 @@
+# 📚 ArXiv Research Chatbot
+
+An AI-powered research assistant built using **Streamlit**, **Python**, and the **arXiv Computer Science dataset**. The chatbot allows users to search research papers, generate summaries, and receive AI-powered explanations of complex research concepts using the open-source **Phi-3 Mini** language model via **Ollama**.
+
+---
+
+## 📌 Features
+
+- 🔍 Search Computer Science research papers from the arXiv dataset
+- 📄 Display paper title, categories, and abstract
+- 📝 Automatic research paper summarization
+- 🤖 AI-powered explanation using Phi-3 Mini (Open Source LLM)
+- 💬 Interactive Streamlit web interface
+- ⚡ Fast and lightweight implementation
+
+---
+
+## 📂 Project Structure
+
+```
+Arxiv_Research_Chatbot/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── data/
+│   ├── arxiv-metadata-oai-snapshot.json
+│   └── cs_papers.csv
+│
+├── utils/
+│   ├── extract_cs_papers.py
+│   ├── search_engine.py
+│   ├── summarizer.py
+│   └── llm.py
+│
+└── embeddings/
+```
+
+---
+
+## 🛠 Technologies Used
+
+- Python 3.12+
+- Streamlit
+- Pandas
+- Ollama
+- Phi-3 Mini
+- Hugging Face Transformers
+- arXiv Dataset
+
+---
+
+## 📊 Dataset
+
+Dataset used:
+
+**arXiv Dataset**
+
+https://www.kaggle.com/datasets/Cornell-University/arxiv
+
+The chatbot is trained on the **Computer Science (cs)** subset extracted from the complete arXiv metadata dataset.
+
+---
+
+## ⚙ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/arxiv-research-chatbot.git
+cd arxiv-research-chatbot
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate virtual environment
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Linux/Mac
+
+```bash
+source venv/bin/activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🤖 Install Ollama
+
+Download Ollama from:
+
+https://ollama.com/download
+
+Pull the Phi-3 Mini model:
+
+```bash
+ollama pull phi3:mini
+```
+
+Verify installation:
+
+```bash
+ollama run phi3:mini
+```
+
+---
+
+## ▶ Running the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser at
+
+```
+http://localhost:8501
+```
+
+---
+
+## 🚀 How It Works
+
+1. User enters a research topic.
+2. The chatbot searches the Computer Science papers.
+3. Relevant papers are displayed.
+4. Abstracts are summarized automatically.
+5. Phi-3 Mini generates a simplified explanation of the research paper.
+
+---
+
+## 📷 Application Features
+
+- Search research papers
+- View paper information
+- Read paper summaries
+- AI-generated explanations
+- User-friendly Streamlit interface
+
+---
+
+## 📈 Future Improvements
+
+- Follow-up question support
+- Concept visualization
+- Semantic search using FAISS
+- Research paper recommendations
+- Chat history
+- PDF upload and analysis
+
+---
+
+## 📚 References
+
+- https://arxiv.org
+- https://www.kaggle.com/datasets/Cornell-University/arxiv
+- https://streamlit.io
+- https://ollama.com
+- https://huggingface.co
+
+---
+
+## 👨‍💻 Author
+
+**Sameer Patil**
+
+Final Year Engineering Student
+
+Domain: Artificial Intelligence | Data Engineering | Machine Learning
+
+---
+
+## 📄 License
+
+This project is developed for educational and academic purposes.
